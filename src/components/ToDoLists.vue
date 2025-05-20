@@ -11,12 +11,12 @@ const isModalOpen = ref(false);
 const modalTitle = ref('');
 const isLoading = ref(false);
 const state = reactive({ tasks: [] });
-const formData = reactive({ taskName: '', taskTime: '', taskSeverity: '' });
+const formData = reactive({ taskName: '', taskTime: '', taskSeverity: null });
 const chartRefreshKey = ref(0)
 
 const openModal = () => {
   isModalOpen.value = true;
-  Object.assign(formData, { taskName: '', taskTime: '', taskSeverity: '' });
+  Object.assign(formData, { taskName: '', taskTime: '', taskSeverity: null });
 };
 const closeModal = () => (isModalOpen.value = false);
 
@@ -175,7 +175,7 @@ onMounted(fetchTask);
         </div>
         <div class="mb-4">
           <label class="block text-sm font-medium text-gray-700">Task Severity</label>
-          <select v-model="formData.taskSeverity" type="text" required class="border p-2 w-full rounded">
+          <select v-model.number="formData.taskSeverity" type="text" required class="border p-2 w-full rounded">
             <option value="1" selected="selected">Low</option>
             <option value="2">Medium</option>
             <option value="3">High</option>

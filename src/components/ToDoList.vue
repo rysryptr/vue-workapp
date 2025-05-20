@@ -131,7 +131,7 @@ const saveTask = (taskId) => {
 
     emit('saveUpdatedTask', {
       ...task.value,
-      taskSeverity: parseInt(task.value.taskSeverity) 
+      taskSeverity: task.value.taskSeverity
     })
   }
 
@@ -177,8 +177,8 @@ onMounted(() => {
     <input v-else class="w-1/6 border-b border-sky-500 focus:outline-none focus:cursor-text" autofocus="autofocus" v-model="task.taskName">
     <div v-if="!isEdit" class="w-1/6 text-left">
       <!-- {{ task.taskSeverity === 1 ? 'Low' : task.taskSeverity === 2 ? 'Medium' : 'High' }} -->
-      <p v-if="task.taskSeverity === '1'" class="text-sky-500 uppercase">Low</p>
-      <p v-else-if="task.taskSeverity === '2'" class="text-yellow-500 uppercase">Medium</p>
+      <p v-if="task.taskSeverity === 1" class="text-sky-500 uppercase">Low</p>
+      <p v-else-if="task.taskSeverity === 2" class="text-yellow-500 uppercase">Medium</p>
       <p v-else class="animate-blink text-pink-500 uppercase">High</p>
     </div>
     <div v-else class="w-1/6 border-b border-sky-500 focus:outline-none">

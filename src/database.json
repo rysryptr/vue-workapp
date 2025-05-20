@@ -83,12 +83,45 @@
       "id": "a355",
       "taskName": "Makan",
       "taskTime": "10",
-      "taskSeverity": "3",
+      "taskSeverity": 3,
       "taskId": 8,
       "taskUserId": "288e",
       "taskWorkingTime": 4000,
       "taskRunning": false,
       "taskProgress": 2
+    },
+    {
+      "id": "2c98",
+      "taskName": "Apply jobs",
+      "taskTime": "20",
+      "taskSeverity": 2,
+      "taskId": 9,
+      "taskUserId": "ee18",
+      "taskWorkingTime": 0,
+      "taskRunning": false,
+      "taskProgress": 0
+    },
+    {
+      "id": "58b3",
+      "taskName": "Mandi",
+      "taskTime": "10",
+      "taskSeverity": 1,
+      "taskId": 10,
+      "taskUserId": "ee18",
+      "taskWorkingTime": 0,
+      "taskRunning": false,
+      "taskProgress": 0
+    },
+    {
+      "id": "be4c",
+      "taskName": "makan",
+      "taskTime": "10",
+      "taskSeverity": 2,
+      "taskId": 11,
+      "taskUserId": "ee18",
+      "taskWorkingTime": 0,
+      "taskRunning": false,
+      "taskProgress": 0
     }
   ]
 }
