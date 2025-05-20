@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "name": "Riyo",
+      "username": "riyo",
+      "email": "riyo@sample.com",
+      "password": "riyo@123",
+      "id": "1"
+    },
+    {
+      "id": "89f2",
+      "name": "surya",
+      "username": "surya",
+      "email": "surya@gmail.com",
+      "password": "surya"
+    },
+    {
+      "id": "56f0",
+      "name": "Putra",
+      "username": "putra",
+      "email": "putra@gmail.com",
+      "password": "putra"
+    },
+    {
+      "id": "288e",
+      "name": "anisa",
+      "username": "anisa",
+      "email": "anisa@email.com",
+      "password": "asd"
+    },
+    {
+      "id": "8590",
+      "name": "riyo",
+      "username": "riyoo",
+      "email": "riyoo@gmail.com",
+      "password": "asd",
+      "password2": "asd"
+    },
+    {
+      "id": "ee18",
+      "name": "riyo",
+      "username": "oyir",
+      "email": "riyoyir@gmail.com",
+      "password": "asd",
+      "password2": "asd"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "bdaf",
+      "taskName": "Learning Vue JS",
+      "taskTime": "60",
+      "taskSeverity": 3,
+      "taskId": 5,
+      "taskUserId": "ee18",
+      "taskWorkingTime": 1800643,
+      "taskRunning": false,
+      "taskProgress": 2
+    },
+    {
+      "id": "0996",
+      "taskName": "Mandi Pagi",
+      "taskTime": "15",
+      "taskSeverity": 2,
+      "taskId": 6,
+      "taskUserId": "288e",
+      "taskWorkingTime": 0,
+      "taskRunning": true,
+      "taskProgress": 1
+    },
+    {
+      "id": "6cb8",
+      "taskName": "Kerja Rodi",
+      "taskTime": "50",
+      "taskSeverity": 1,
+      "taskId": 7,
+      "taskUserId": "288e",
+      "taskWorkingTime": 0,
+      "taskRunning": false,
+      "taskProgress": 0
+    },
+    {
+      "id": "a355",
+      "taskName": "Makan",
+      "taskTime": "10",
+      "taskSeverity": "3",
+      "taskId": 8,
+      "taskUserId": "288e",
+      "taskWorkingTime": 4000,
+      "taskRunning": false,
+      "taskProgress": 2
+    }
+  ]
+}
