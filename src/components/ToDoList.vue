@@ -175,11 +175,17 @@ onMounted(() => {
   <div class="flex justify-between items-center text-gray-600 border-b border-gray-200 min-h-full">
     <div v-if="!isEdit" class="w-1/6">{{ task.taskName}}</div>
     <input v-else class="w-1/6 border-b border-sky-500 focus:outline-none focus:cursor-text" autofocus="autofocus" v-model="task.taskName">
-    <div v-if="!isEdit" class="w-1/6 text-left">
-      <!-- {{ task.taskSeverity === 1 ? 'Low' : task.taskSeverity === 2 ? 'Medium' : 'High' }} -->
-      <p v-if="task.taskSeverity === 1" class="text-sky-500 uppercase">Low</p>
-      <p v-else-if="task.taskSeverity === 2" class="text-yellow-500 uppercase">Medium</p>
-      <p v-else class="animate-blink text-pink-500 uppercase">High</p>
+    <div v-if="!isEdit" class="w-1/6">
+      <div 
+        class="w-16 h-6 rounded-full text-xs flex items-center justify-center font-bold"
+        :class="{
+          'bg-blue-100 text-blue-600': task.taskSeverity === 1, 
+          'bg-yellow-100 text-yellow-600': task.taskSeverity === 2, 
+          'bg-red-100 text-red-600': task.taskSeverity === 3, 
+        }"
+      >
+        {{ task.taskSeverity === 1 ? 'Low' : task.taskSeverity === 2 ? 'Medium' : 'High' }}
+      </div>
     </div>
     <div v-else class="w-1/6 border-b border-sky-500 focus:outline-none">
       <select v-model="task.taskSeverity" class="w-full">
